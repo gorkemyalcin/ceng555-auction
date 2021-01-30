@@ -1,8 +1,8 @@
 package com.kafka.models;
 
 public class SeaProduct {
-	private Integer id;
-	private String name;
+	private Integer fish_id;
+	private String fish_type;
 	private String quantity;
 	private Fisherman fisherman;
 	private Integer price;
@@ -11,35 +11,36 @@ public class SeaProduct {
 		super();
 	}
 
-	public SeaProduct(Integer id, String name, String quantity, Fisherman fisherman, Integer price) {
+	public SeaProduct(Integer fish_id, String fish_type, String quantity, Fisherman fisherman, Integer price) {
 		super();
-		this.id = id;
-		this.name = name;
+		this.fish_id = fish_id;
+		this.fish_type = fish_type;
 		this.quantity = quantity;
 		this.fisherman = fisherman;
 		this.price = price;
 	}
 
+
 	@Override
 	public String toString() {
-		return "SeaProduct [id=" + id + ", name=" + name + ", quantity=" + quantity + ", fisherman="
-				+ fisherman + "]";
+		return "SeaProduct [fish_id=" + fish_id + ", fish_type=" + fish_type + ", quantity=" + quantity + ", fisherman="
+				+ fisherman + ", price=" + price + "]";
 	}
 
-	public Integer getId() {
-		return id;
+	public Integer getFish_id() {
+		return fish_id;
 	}
 
-	public void setId(Integer id) {
-		this.id = id;
+	public void setFish_id(Integer fish_id) {
+		this.fish_id = fish_id;
 	}
 
-	public String getName() {
-		return name;
+	public String getFish_type() {
+		return fish_type;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setFish_type(String fish_type) {
+		this.fish_type = fish_type;
 	}
 
 	public String getQuantity() {

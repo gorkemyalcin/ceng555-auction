@@ -2,48 +2,49 @@ package com.kafka.models;
 
 public class Fisherman {
 
-	private Integer id;
-	private String name;
-	private String surname;
+	private Integer fisherman_id;
+	private String fisherman_name;
+	private String fisherman_surname;
 
 	public Fisherman() {
 		super();
 	}
 
-	public Fisherman(Integer id, String name, String surname) {
+	public Fisherman(Integer fisherman_id, String fisherman_name, String fisherman_surname) {
 		super();
-		this.id = id;
-		this.name = name;
-		this.surname = surname;
+		this.fisherman_id = fisherman_id;
+		this.fisherman_name = fisherman_name;
+		this.fisherman_surname = fisherman_surname;
 	}
 
 	@Override
 	public String toString() {
-		return "Fisherman [id=" + id + ", name=" + name + ", surname=" + surname + "]";
+		return "Fisherman [fisherman_id=" + fisherman_id + ", fisherman_name=" + fisherman_name + ", fisherman_surname="
+				+ fisherman_surname + "]";
 	}
 
-	public Integer getId() {
-		return id;
+	public Integer getFisherman_id() {
+		return fisherman_id;
 	}
 
-	public void setId(Integer id) {
-		this.id = id;
+	public void setFisherman_id(Integer fisherman_id) {
+		this.fisherman_id = fisherman_id;
 	}
 
-	public String getName() {
-		return name;
+	public String getFisherman_name() {
+		return fisherman_name;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setFisherman_name(String fisherman_name) {
+		this.fisherman_name = fisherman_name;
 	}
 
-	public String getSurname() {
-		return surname;
+	public String getFisherman_surname() {
+		return fisherman_surname;
 	}
 
-	public void setSurname(String surname) {
-		this.surname = surname;
+	public void setFisherman_surname(String fisherman_surname) {
+		this.fisherman_surname = fisherman_surname;
 	}
 
 }
