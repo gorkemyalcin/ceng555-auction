@@ -25,7 +25,6 @@ public class ProductRegisterService {
 		Simulation simulation = new Simulation();
 		List<SeaProduct> registeredSeaProducts = simulation.registerSeaProducts(registerSeaProductRequest);
 		kafkaTemplate.send(TOPIC, registeredSeaProducts);
-		System.out.println(registeredSeaProducts);
 		return "Published successfully";
 	}
 
